@@ -63,6 +63,8 @@
                 margin-bottom: 30px;
             }
         </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -81,15 +83,47 @@
 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
+                   
                     <div class="panel">
-                        @component('components.who')
-                            
-                        @endcomponent
+                     
+
+                     <div >
+
+                    <canvas id="myCanvas" style="background-color:gray;">  </canvas>
                     </div>
+
+                    </div>
+                    
+
+                    
                 </div>
             </div>
 
             </div>
+
         </div>
+         <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+
+         <script type="text/javascript">
+         var myName = "IoInfoSec";
+         var red = [0,100,63];
+         var orange = [40,100,60];
+         var green = [75,100,40];
+         var blue = [196,77,55];
+         var purple = [280,50,60];
+
+         var letterColors = [red,orange,green,blue,purple];
+
+         drawName(myName,letterColors);
+         if(10<3){
+            bubbleShape = 'square';
+         }else{
+            bubbleShape = 'circle';
+         }
+         bounceBubbles();
+
+         </script>
+
+
     </body>
 </html>
